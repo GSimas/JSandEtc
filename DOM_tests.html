@@ -74,6 +74,17 @@ function alerta(){
         alert('Botao clicado');
     }
 
+    var linkElement = document.createElement('a');
+
+    linkElement.href = "http://google.com.br";
+    linkElement.setAttribute("target", "_blank");
+
+    var textElement = document.createTextNode("Acessar Google");
+    linkElement.appendChild(textElement);
+
+    var boxElement = document.querySelector("#app");
+    boxElement.appendChild(linkElement);
+
 
 </script>
 
