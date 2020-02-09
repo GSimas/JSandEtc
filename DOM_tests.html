@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title>Teste Javascript</title>
+
+</head>
+
+
+<body>
+
+
+    <div id="app">
+        <button onclick="alerta()">Aperte</button>
+
+        <button onmouseover="alerta()">Passe por cima</button>
+
+        <input type="text" name="nome" id="nome"/>
+        <button class="botao" id="botao">Enviar</button>
+
+        <button class="botao2">BtnElement</button>
+    </div>
+
+
+<script>
+
+//javascript
+
+console.log('Hello World!');
+
+var nome = 'Gustavo';
+
+console.log(nome);
+
+var aluno = {
+    nome: 'Ronaldo',
+    idade: 40,
+    dinheiro: 12
+
+};
+
+console.log(aluno.idade % aluno.dinheiro);
+
+function funcao_soma(x,y){
+    resultado = x + y;
+
+    return resultado;
+}
+
+    var soma = funcao_soma(1,2);
+
+function exibe(){
+    console.log("Interval");
+    }
+
+function alerta(){
+    alert('Você apertou o botão');
+}
+
+    var inputElement1 = document.getElementById("nome");
+
+    console.log(inputElement1);
+
+    var inputElement2 = document.querySelector('div#app button#botao');
+
+    console.log(inputElement2);
+
+    var inputElement3 = document.querySelector('input[name=nome]');
+
+    console.log(inputElement3);
+
+    var btnElement = document.querySelector('button.botao2');
+
+    btnElement.onclick = function(){
+        alert('Botao clicado');
+    }
+
+
+</script>
+
+
+</body>
+
+
+</html>
