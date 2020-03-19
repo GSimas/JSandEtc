@@ -1,0 +1,27 @@
+.product-info {
+    max-width: 700px;
+    align-content: center;
+    background: white;
+    margin: 20px auto 0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.product-info h1 {
+    font-size: 32px;
+}
+
+.product-info p {
+    color: grey;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.product-info p a {
+    color: blue;
+}
+
+.product-info p a:hover {
+    color: darkblue;
+}
